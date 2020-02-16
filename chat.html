@@ -8,9 +8,10 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
     />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Chat | Kakao Clone</title>
   </head>
-  <body>
+  <body class="chats-body">
     <div class="status-bar">
       <div class="status-bar__column">
         <span class="status-bar__clock">13:54</span>
@@ -26,34 +27,53 @@
     <header class="header">
       <div class="header__header-column">
         <a href="index.html" class="header__back-btn">
-          <i class="fas fa-arrow-left fa-2x"></i>
+          <i class="fas fa-arrow-left"></i>
         </a>
-        <h1 class="header__title">Best Friend</h1>
+        <h1 class="header__title">Algorth</h1>
       </div>
       <div class="header__header-column">
         <span class="header__icon">
           <i class="fas fa-search"></i>
         </span>
-        <div class="header__icon">
+        <span class="header__icon">
           <i class="fas fa-bars"></i>
-        </div>
+        </span>
       </div>
     </header>
-    <main class="chat">
-      <ul class="chat__meassages">
+    <main class="chat-screen">
+      <ul class="chat__messages">
         <span class="chat__timestamp">Frida, January 11, 2019</span>
         <li class="incoming-message message">
-          <img src="images/img.PNG" class="g-avatar message__avatar" />
+          <img src="images/lion.jpg" class="m-avatar message__avatar" />
           <div class="message__content">
-            <span class="message__author">Best Friend</span>
-            <div class="message__bubble">Congrats I love you!</div>
-            <span class="message__timestamp"></span>
+            <span class="message__author">권주원</span>
+            <span class="message__bubble"
+              >애들아 내일까지 자료 정리좀 해줘</span
+            >
+          </div>
+        </li>
+        <li class="sent-message message">
+          <div class="message__content">
+            <span class="message__bubble">ㅇㅋ</span>
           </div>
         </li>
         <li class="incoming-message message">
-          <span class="message__timestamp"></span>
+          <img src="images/lion.jpg" class="m-avatar message__avatar" />
           <div class="message__content">
-            <div class="message__bubble">Thank you see you soon!</div>
+            <span class="message__author">김주형</span>
+            <span class="message__bubble">정리해서 나한테 보내주면 될듯</span>
+          </div>
+        </li>
+        <li class="sent-message message">
+          <div class="message__content">
+            <span class="message__bubble">시우야 똑바로좀 하자</span>
+          </div>
+        </li>
+        <li class="incoming-message message">
+          <img src="images/lion.jpg" class="m-avatar message__avatar" />
+          <div class="message__content">
+            <span class="message__author">강시우</span>
+            <span class="message__bubble">노력해볼게 </span>
           </div>
         </li>
       </ul>
